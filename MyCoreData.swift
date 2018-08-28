@@ -7,35 +7,7 @@
 //
 
 import UIKit
-import CoreData
-
-class ViewController: UIViewController {
-    
-    @IBOutlet var productID: UITextField!
-    @IBOutlet var productName: UITextField!
-    @IBOutlet var productPrice: UITextField!
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        selectProducts()
-        
-    }
-    
-    @IBAction func InsertB(_ sender: UIButton) {
-        
-        insertNewProduct()
-        
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
-    
-    
-    
-    
+import CoreData   
     
     func insertNewProduct(){
         
